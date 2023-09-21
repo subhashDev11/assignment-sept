@@ -1,0 +1,53 @@
+name: subhash_chandra_s_application3
+description: A new Flutter project.
+version: 1.0.0+1
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+dependencies: 
+  flutter: 
+    sdk: flutter
+  flutter_localizations: 
+    sdk: flutter
+  provider: ^6.0.5
+  cached_network_image: ^3.2.3
+  flutter_svg: ^2.0.7
+  dotted_border: 2.0.0+3
+  intl: ^0.18.0
+  image_cropper: ^5.0.0
+  logger: ^2.0.2
+  image_picker: ^1.0.4
+  loading_animation_widget: ^1.2.0+4
+  uuid: ^4.0.0
+  get_it: ^7.6.4
+  shared_preferences: ^2.2.1
+  flash: ^2.0.0
+  http_parser: ^4.0.2
+  mime_type: ^1.0.0
+
+
+
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  uses-material-design: true
+  assets: 
+    - assets/
+    - assets/images/
+  fonts: 
+    - family: Roboto
+      fonts: 
+        - asset: assets/fonts/RobotoRomanMedium.ttf
+          weight: 500
+    - family: Work Sans
+      fonts: 
+        - asset: assets/fonts/WorkSansRomanRegular.ttf
+          weight: 400
+    - family: Raleway
+      fonts: 
+        - asset: assets/fonts/RalewayRomanBold.ttf
+          weight: 700
+        - asset: assets/fonts/RalewayRomanSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/RalewayRomanMedium.ttf
+          weight: 500
