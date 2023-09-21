@@ -1,19 +1,16 @@
-import 'dart:ui';
 
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:subhash_chandra_s_application3/core/app_export.dart';
-import 'package:subhash_chandra_s_application3/core/app_extensions.dart';
 import 'package:subhash_chandra_s_application3/state/upload_image_provider.dart';
 import 'package:subhash_chandra_s_application3/widgets/app_bar/appbar_image_1.dart';
 import 'package:subhash_chandra_s_application3/widgets/app_bar/appbar_title.dart';
 import 'package:subhash_chandra_s_application3/widgets/app_bar/custom_app_bar.dart';
 import 'package:subhash_chandra_s_application3/widgets/custom_elevated_button.dart';
-import 'package:subhash_chandra_s_application3/widgets/custom_icon_button.dart';
 
-class CustomizationTwoScreen extends StatelessWidget {
-  const CustomizationTwoScreen({Key? key})
+class CustomizationScreen extends StatelessWidget {
+  const CustomizationScreen({Key? key})
       : super(
           key: key,
         );
@@ -74,55 +71,60 @@ class CustomizationTwoScreen extends StatelessWidget {
               padding: EdgeInsets.only(top: 20.v),
               child: Column(
                 children: [
-                  Container(
-                    margin: EdgeInsets.symmetric(
-                        horizontal: 20.h,
-                    ),
-                    decoration: AppDecoration.outlineBlueGray.copyWith(
-                      borderRadius: BorderRadiusStyle.roundedBorder6,
-                    ),
-                    child: DottedBorder(
-                      color: appTheme.blueGray100,
-                      padding: EdgeInsets.only(
-                        left: 1.h,
-                        top: 1.v,
-                        right: 1.h,
-                        bottom: 1.v,
+                  InkWell(
+                    onTap: (){
+                      context.read<UploadImageProvider>().pickImage(context);
+                    },
+                    child: Container(
+                      margin: EdgeInsets.symmetric(
+                          horizontal: 20.h,
                       ),
-                      strokeWidth: 1.h,
-                      radius: Radius.circular(8),
-                      borderType: BorderType.RRect,
-                      dashPattern: [
-                        2,
-                        2,
-                      ],
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 48.h,
-                          vertical: 14.v,
+                      decoration: AppDecoration.outlineBlueGray.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder6,
+                      ),
+                      child: DottedBorder(
+                        color: appTheme.blueGray100,
+                        padding: EdgeInsets.only(
+                          left: 1.h,
+                          top: 1.v,
+                          right: 1.h,
+                          bottom: 1.v,
                         ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            CustomImageView(
-                              svgPath: ImageConstant.imgUpload,
-                              height: 20.v,
-                              width: 26.h,
-                              margin: EdgeInsets.only(top: 1.v),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                left: 8.h,
-                                top: 1.v,
+                        strokeWidth: 1.h,
+                        radius: Radius.circular(8),
+                        borderType: BorderType.RRect,
+                        dashPattern: [
+                          2,
+                          2,
+                        ],
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 48.h,
+                            vertical: 14.v,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              CustomImageView(
+                                svgPath: ImageConstant.imgUpload,
+                                height: 20.v,
+                                width: 26.h,
+                                margin: EdgeInsets.only(top: 1.v),
                               ),
-                              child: Text(
-                                "msg_change_picture_here".tr,
-                                style: theme.textTheme.titleSmall,
+                              Padding(
+                                padding: EdgeInsets.only(
+                                  left: 8.h,
+                                  top: 1.v,
+                                ),
+                                child: Text(
+                                  "msg_change_picture_here".tr,
+                                  style: theme.textTheme.titleSmall,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),

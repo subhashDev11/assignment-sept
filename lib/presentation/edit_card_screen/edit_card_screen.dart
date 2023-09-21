@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:subhash_chandra_s_application3/core/app_export.dart';
-import 'package:subhash_chandra_s_application3/core/app_extensions.dart';
 import 'package:subhash_chandra_s_application3/state/upload_image_provider.dart';
 import 'package:subhash_chandra_s_application3/widgets/app_bar/appbar_image.dart';
 import 'package:subhash_chandra_s_application3/widgets/app_bar/appbar_title.dart';
@@ -148,6 +147,10 @@ class EditCardScreen extends StatelessWidget {
             bottom: 35.v,
             top: 20.v,
           ),
+          onTap: (){
+            context.read<UploadImageProvider>()
+                .onCustomizeCard(context);
+          },
         ),
       ),
     );
