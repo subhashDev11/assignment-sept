@@ -57,5 +57,13 @@ Resolve the errors and warnings that are shown in the application.
   https://pub.dev/packages/image_cropper
 - get_it - For dependency injections
   https://pub.dev/packages/get_it
-  
+
+### Support
+Contact me on following platform -
+1. https://subhash-dev-ca050.web.app/
+2. https://www.linkedin.com/in/subhashcs/
+3. subhashchandras7318@gmail.com
+4. https://github.com/subhashDev11/  
+
+
 
