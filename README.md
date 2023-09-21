@@ -23,9 +23,8 @@ Check the UI of all the app screens from a single place by setting up the 'initi
 ├── lib                             - Most important folder in the application, used to write most of the Dart code..
     ├── main.dart                   - Starting point of the application
     ├── app      
-    │   ├── app_export.dart         - It contains commonly used file imports
-    │   ├── constants               - It contains static constant class file
-    │
+    │   ├── app.dart                - Widget for material App, theme & route setting
+    │   ├── constants               - Widget for registring providers│
     ├── core
     │   ├── app_export.dart         - It contains commonly used file imports
     │   ├── constants               - It contains static constant class file
@@ -54,5 +53,9 @@ Resolve the errors and warnings that are shown in the application.
   https://pub.dev/packages/provider
 - cached_network_image - For storing internet image into cache
   https://pub.dev/packages/cached_network_image
-
+- image_cropper - For editing & cropping image
+  https://pub.dev/packages/image_cropper
+- get_it - For dependency injections
+  https://pub.dev/packages/get_it
+  
 
