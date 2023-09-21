@@ -57,6 +57,8 @@ Resolve the errors and warnings that are shown in the application.
   https://pub.dev/packages/image_cropper
 - get_it - For dependency injections
   https://pub.dev/packages/get_it
+- http - For api request handling
+  https://pub.dev/packages/http
 
 ### Support
 Contact me on following platform -
